@@ -1,11 +1,11 @@
-Ticket Booking System
+## TICKET BOOKING SYSTEM
 
 This is a full stack ticket booking system built using Node.j,Express,PostgreSQL,React,TypeScript, and Vite.
 
 
 Features
 
-## User Features
+## User Features Ticket Booking System
 - View available shows  
 - Visual seat selection grid  
 - Safe booking with transaction locks  
