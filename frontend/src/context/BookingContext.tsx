@@ -1,4 +1,5 @@
-import React, { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext } from "react";
+import type { FC, ReactNode } from "react";
 import api from "../api/api";
 import type { Booking } from "../types";
 
@@ -10,7 +11,7 @@ type BookingContextType = {
 
 const BookingContext = createContext<BookingContextType | undefined>(undefined);
 
-export const BookingProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
+export const BookingProvider: FC<{ children?: ReactNode }> = ({ children }: { children?: ReactNode }) => {
   const [bookings, setBookings] = useState<Booking[]>([]);
 
   const createBooking = async (showId: number, seats: number) => {
