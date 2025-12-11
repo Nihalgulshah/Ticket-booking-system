@@ -1,6 +1,6 @@
-Ticket Booking System (Modex Full Stack Assessment)
+Ticket Booking System
 
-This is a full-stack ticket booking system built using Node.j,Express,PostgreSQL,React,TypeScript, and Vite.
+This is a full stack ticket booking system built using Node.j,Express,PostgreSQL,React,TypeScript, and Vite.
 
 
 Features
