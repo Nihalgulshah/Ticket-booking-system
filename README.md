@@ -11,7 +11,7 @@ Features
 - Safe booking with transaction locks  
 - Updated real-time seat availability  
 
-## Admin Features**
+## Admin Features
 - Create new shows  
 - View all shows  
 - Manage start times & seat counts  
