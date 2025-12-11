@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useShows } from "../context/ShowsContext";
 import { useAuth } from "../context/AuthContext";
 
