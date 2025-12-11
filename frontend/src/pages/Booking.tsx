@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import api from "../api/api";
 import SeatGrid from "../components/SeatGrid";

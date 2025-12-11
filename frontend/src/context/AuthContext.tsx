@@ -1,3 +1,4 @@
+import React, { createContext, useState, useContext } from "react";
 
 type AuthContextType = {
   isAdmin: boolean;
@@ -7,7 +8,7 @@ type AuthContextType = {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const AuthProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const loginAsAdmin = () => setIsAdmin(true);
   const logout = () => setIsAdmin(false);

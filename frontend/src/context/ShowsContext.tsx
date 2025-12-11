@@ -1,3 +1,4 @@
+import React, { createContext, useState, useEffect, useContext } from "react";
 import api from "../api/api";
 import type { Show } from "../types";
 
@@ -9,7 +10,7 @@ type ShowsContextType = {
 
 const ShowsContext = createContext<ShowsContextType | undefined>(undefined);
 
-export const ShowsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ShowsProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
   const [shows, setShows] = useState<Show[]>([]);
 
   const refreshShows = async () => {
